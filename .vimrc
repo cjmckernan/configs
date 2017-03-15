@@ -8,23 +8,32 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 "Plugins
+
+"Docker plugin
 Plugin 'ekalinin/Dockerfile.vim'
+"JSON Plugin
 Plugin 'elzr/vim-json'
+"Snippets 
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+"Airline 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+"Git addons 
 Plugin 'gregsexton/gitv'
+Plugin 'tpope/vim-fugitive'
+"File search ctrlp
 Plugin 'kien/ctrlp.vim'
-Plugin 'Lokaltog/vim-easymotion'
+"UI plugins 
 Plugin 'mhinz/vim-signify'
 Plugin 'mhinz/vim-startify'
+"Nice sytnax plugins 
 Plugin 'vim-syntastic/syntastic'
-Plugin 'tpope/vim-fugitive'
+"Surrounding 
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-vinegar'
+"VIM Go plugin
 Plugin 'fatih/vim-go'
-Plugin 'Raimondi/delimitMate'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'morhetz/gruvbox'
 call vundle#end()
 
 "Default settings
@@ -37,6 +46,12 @@ let g:ctrlp_map = '<c-p>'
 
 "Airline Theme settings
 let g:airline_theme='papercolor'
+
+"Util snips settings
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 
 
 "Syntastic settings
